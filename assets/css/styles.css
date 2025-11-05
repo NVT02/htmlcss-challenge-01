@@ -36,11 +36,27 @@ body {
     background: var(--primary-color);
     text-decoration: none;
 }
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.heading {
+    color: #0d1111;
+    font-weight: 700;
+}
+
+.heading.lv1 {
+    font-size: 6.2rem;
+    line-height: 7.2rem;
+}
+
 /* ========== Header ========== */
 .header.fixed {
     position: sticky;
     top: -40px;
     z-index: 1;
+    background-color: #fff;
 }
 
 .header .body {
@@ -99,4 +115,165 @@ body {
     color: #fff;
     background: var(--primary-color);
     transition: all 0.3s ease;
+}
+
+/* ========== Header ========== */
+.hero {
+    padding: 42px 0 79px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+/* Hero content */
+.hero .content-block {
+    width: 39.1%;
+    padding-top: 93px;
+}
+
+.hero .content-block .eyebrow {
+    color: #767e7e;
+    font-size: 1.4rem;
+}
+
+.hero .content-block .heading {
+    padding-top: 18px;
+}
+
+.hero .content-block .desc {
+    width: 374px;
+    padding-top: 46px;
+    color: #9da6a5;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.hero .content-block .cta-group {
+    display: flex;
+    align-items: center;
+    padding-top: 52px;
+}
+
+.hero .cta-group .play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 6.2rem;
+    height: 6.2rem;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+    border: none;
+    cursor: pointer;
+}
+
+/* Hero media */
+.hero .media-block {
+    position: relative;
+    margin-left: auto;
+    width: 576px;
+    height: 631px;
+    object-fit: cover;
+}
+
+/* Card */
+.hero .courses-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -40px;
+    top: 149px;
+    width: 15.7rem;
+    height: 7.5rem;
+    border-radius: 1.8rem;
+    background: #fefefd;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .courses-card .book-icon {
+    position: relative;
+    margin-right: 16px;
+    width: 36px;
+    height: 40px;
+    background: #ff8282;
+    border-radius: 3px 2px 2px 3px;
+}
+
+.hero .courses-card .book-icon::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    bottom: 8px;
+    left: 4px;
+    border-radius: 999px;
+    background: #fff;
+    width: 2.8rem;
+    height: 0.4rem;
+}
+
+.hero .courses-card .desc {
+    width: 55px;
+}
+
+.hero .courses-card .desc,
+.hero .schedules-card .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero .schedules-card .desc {
+    margin: 16px 0;
+}
+
+.hero .schedules-card {
+    position: absolute;
+    left: -65px;
+    bottom: 46px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2.4rem;
+    background: #fff;
+    box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+    width: 12.4rem;
+    height: 13.2rem;
+    --progress-width: 58%;
+}
+
+.hero .schedules-card .bar {
+    width: 7.4rem;
+    height: 0.6rem;
+    border-radius: 999px;
+    background: #edf1f5;
+}
+
+.hero .bar .progress {
+    height: 100%;
+    width: var(--progress-width);
+    border-radius: 999px;
+    background: #fb9899;
+}
+
+.hero .schedules-card .bar:nth-of-type(1) {
+    margin-bottom: 12px;
+}
+
+.hero .schedules-card .bar:nth-of-type(2) {
+    margin-bottom: 10px;
+}
+
+.hero .schedules-card .bar:nth-of-type(3) {
+    margin-bottom: 16px;
+}
+
+.hero .schedules-card .bar:nth-of-type(3) {
+    margin-bottom: 16px;
+}
+
+.hero .schedules-card .bar.light {
+    width: 26px;
 }
