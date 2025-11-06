@@ -56,6 +56,11 @@ body {
     line-height: 5.6rem;
 }
 
+.heading.lv3 {
+    font-size: 2.2rem;
+    line-height: normal;
+}
+
 /* ========== Header ========== */
 .header.fixed {
     position: sticky;
@@ -327,7 +332,7 @@ body {
 /* ========== Features ========== */
 .features {
     margin-top: 51px;
-    padding: 79px 0;
+    padding: 79px 0 50px;
 }
 
 .features .main-content {
@@ -380,3 +385,131 @@ body {
     font-size: 1.6rem;
     line-height: 2.7rem;
 }
+
+/* ========== Popular ========== */
+.popular {
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+.popular .info .eyebrow {
+    color: #767e7e;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.popular .heading.lv2 {
+    margin-top: 18px;
+}
+
+.popular .info .row {
+    display: flex;
+    align-items: center;
+}
+
+.popular .info .desc {
+    max-width: 525px;
+    margin-top: 18px;
+    color: #767e7e;
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+}
+
+.popular .row .link-courses {
+    display: flex;
+    margin-left: auto;
+    color: #1ebfc1;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Popular media */
+
+.courses-list {
+    display: flex;
+    padding-top: 79px;
+    gap: 47px;
+}
+
+.course-img-wrap {
+    width: 35.9rem;
+    height: 39.3rem;
+    background: #d0efed;
+    border-radius: 0.8rem;
+    overflow: hidden;
+}
+
+.courses-list .course-item .course-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.8rem;
+    opacity: 0.7;
+}
+
+.courses-list .course-item .course-img:hover {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.courses-list .course-item {
+    position: relative;
+}
+
+.courses-list .body {
+    position: absolute;
+    left: 17px;
+    top: 322px;
+    padding: 18px 25px 29px;
+    width: 32.5rem;
+    height: 19.5rem;
+    border-radius: 0.8rem;
+    background: #fff;
+    box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.courses-list .price {
+    margin-top: 16px;
+    color: #767e7e;
+    font-size: 1.6rem;
+    line-height: normal;
+}
+
+.courses-list .price strong {
+    color: #0d1111;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.courses-list .body .desc {
+    margin-top: 6px;
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.courses-list .body .info-course {
+    margin-top: 18px;
+    margin-left: -10px;
+}
+
+.courses-list .body .info-course .label {
+    color: #9da6a5;
+    font-size: 1.4rem;
+    line-height: normal;
+}
+
+.courses-list .body .info-course .label::before {
+    display: inline-block;
+    content: "";
+    line-height: 100%;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: 50%;
+    margin: 0 10px;
+    position: relative;
+    top: -2px;
+    background: var(--primary-color);
+}
+
+/* ========== Stats ========== */
