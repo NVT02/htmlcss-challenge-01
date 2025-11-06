@@ -513,3 +513,31 @@ body {
 }
 
 /* ========== Stats ========== */
+.stats {
+    margin-top: 339px;
+}
+
+.stats .main-content {
+    max-width: 862px;
+}
+
+.stats .row {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.stats .row .qty {
+    color: #0d1111;
+    font-size: 6.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.stats .row .desc {
+    color: #767e7e;
+    font-size: 1.8rem;
+    font-style: normal;
+    line-height: normal;
+}
