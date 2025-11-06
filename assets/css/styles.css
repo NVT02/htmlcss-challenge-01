@@ -56,7 +56,8 @@ body {
     position: sticky;
     top: -40px;
     z-index: 1;
-    background-color: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(32px);
 }
 
 .header .body {
@@ -276,4 +277,44 @@ body {
 
 .hero .schedules-card .bar.light {
     width: 26px;
+}
+
+.hero .student-card {
+    position: absolute;
+    right: 45px;
+    bottom: 41px;
+    padding: 17px 35px;
+    width: 20.7rem;
+    height: 9rem;
+    border-radius: 2.4rem;
+    background: #fefefd;
+    box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero .student-card .desc {
+    color: #0d1111;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.hero .avatar-group {
+    display: flex;
+    padding-top: 8px;
+    align-items: center;
+    margin-left: 9px;
+}
+
+.hero .avatar-group .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 33px;
+    height: 33px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #1ebfc1;
+    margin-left: -9px;
 }
