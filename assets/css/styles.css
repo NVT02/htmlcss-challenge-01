@@ -38,7 +38,7 @@ body {
 }
 
 .btn:hover {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .heading {
@@ -667,3 +667,28 @@ body {
     right: 171px;
     top: 107px;
 }
+
+/* ========== CTA Section ========== */
+.cta {
+    margin-top: 80px;
+    padding: 76px 0 88px;
+    background: #def6f5;
+}
+
+.cta .body {
+    display: flex;
+    align-items: center;
+}
+
+.cta .body .desc {
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 100%;
+    color: #767e7e;
+}
+
+.cta .btn {
+    margin-left: 410px;
+}
+
+/* ==========Footer ========== */
