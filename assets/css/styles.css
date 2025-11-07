@@ -6,6 +6,11 @@
     --primary-color: #1ebfc1;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -14,6 +19,10 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+
+/* a {
+    text-decoration: none;
+} */
 
 /* ========== Common ========== */
 .main-content {
@@ -59,6 +68,20 @@ body {
 .heading.lv3 {
     font-size: 2.2rem;
     line-height: normal;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-2 {
+    --line-clamp: 2;
+}
+.line-3 {
+    --line-clamp: 3;
 }
 
 /* ========== Header ========== */
@@ -439,21 +462,31 @@ body {
     overflow: hidden;
 }
 
+.courses-list .course-item {
+    position: relative;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* overflow: visible; */
+}
+
 .courses-list .course-item .course-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 0.8rem;
     opacity: 0.7;
+    transition: all 0.3s ease;
 }
 
-.courses-list .course-item .course-img:hover {
+.courses-list .course-item:hover .course-img {
     opacity: 1;
-    transition: 0.3s ease;
+    transform: scale(1.05);
 }
 
-.courses-list .course-item {
-    position: relative;
+.courses-list .course-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .courses-list .body {
@@ -466,6 +499,11 @@ body {
     border-radius: 0.8rem;
     background: #fff;
     box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.courses-list .course-item:hover .body {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    transition: all 0.4s ease;
 }
 
 .courses-list .price {
@@ -692,3 +730,60 @@ body {
 }
 
 /* ==========Footer ========== */
+.footer {
+    padding: 131px 135px 0;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .row .column {
+    width: 18.75%;
+}
+
+.footer .row .column:nth-child(4) {
+    width: 25%;
+}
+
+.footer .column .title {
+    color: #2e2e2e;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.footer .list {
+    margin-top: 26px;
+}
+
+.footer .list a {
+    display: flex;
+    color: #535353;
+    font-size: 16px;
+    line-height: 100%;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer .list a:hover {
+    text-decoration: underline;
+}
+
+.footer .list a .icon {
+    text-align: center;
+    margin-right: 9px;
+}
+
+.footer .copyright {
+    margin: 80px 0 50px;
+    color: #b0b5b4;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.footer a .icon.facebook {
+    margin-left: 3px;
+    margin-right: 11px;
+}
