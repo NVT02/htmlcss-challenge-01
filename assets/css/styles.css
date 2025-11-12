@@ -731,19 +731,20 @@ body {
 
 /* ==========Footer ========== */
 .footer {
-    padding: 131px 135px 0;
+    padding: 131px 0 0;
 }
 
 .footer .row {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer .row .column {
-    width: 18.75%;
+    /* width: 18.75%; */
 }
 
 .footer .row .column:nth-child(4) {
-    width: 25%;
+    /* width: 25%; */
 }
 
 .footer .column .title {
